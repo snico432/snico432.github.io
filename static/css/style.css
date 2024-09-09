@@ -28,7 +28,7 @@ h4, p, li {
   width: 50%;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .cover-container {
     width: 100%;
   }
@@ -44,8 +44,32 @@ h4, p, li {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
 
-  /* .goal-img {
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .goal-img {
+    width: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+  .goal-img {
+    width: 40%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .goal-img {
     width: 20%;
-  } */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .goal-img {
+    width: 18%;
+  }
 }
